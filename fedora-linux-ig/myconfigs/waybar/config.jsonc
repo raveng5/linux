@@ -1,0 +1,41 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 26,
+  "spacing": 4,
+  "modules-left": ["niri/workspaces", "niri/window"],
+  "modules-center": [],
+  "modules-right": ["network", "battery", "clock"],
+
+  "niri/workspaces": {
+    "format": "{value}",
+  },
+
+  "niri/window": {
+    "format": "•  {title}",
+    "max-length": 50,
+    "separate-outputs": true,
+  },
+
+  "network": {
+    "format-wifi": "󰤨  {essid}",
+    "format-ethernet": "󰈀  {ifname}",
+    "format-disconnected": "󰤮  Offline",
+    "tooltip-format": false,
+  },
+
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15,
+    },
+    "format": "{icon}  {capacity}%",
+    "format-charging": "󱐋 {capacity}%",
+    "format-icons": ["󰁺", "󰁼", "󰁾", "󰂀", "󰁹"],
+  },
+
+  "clock": {
+    "format": "󰸗  {:%d %b  %H:%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+  },
+}

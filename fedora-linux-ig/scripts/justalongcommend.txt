@@ -1,0 +1,1 @@
+cp -r ~/.config/{fuzzel,fastfetch,niri,waybar,starship.toml} /home/ig/dotfiles/fedora-linux-ig/myconfigs/
