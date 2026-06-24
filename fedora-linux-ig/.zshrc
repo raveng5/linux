@@ -15,14 +15,14 @@ gitup() {
     # Check if we are in the dotfiles directory, if not, jump there
     cd /home/ig/dotfiles || return
 
-    echo "🧼 Preparing clean slate..."
+    echo "Preparing"
     git add -A
 
-    echo "📝 Creating fresh snapshot..."
+    echo "Creating fresh snapshot"
     git commit -m "Full upload: $(date '+%Y-%m-%d %H:%M:%S')" --allow-empty
 
-    echo "🚀 Force pushing the entire directory..."
+    echo "Force pushing the entire directory..."
     git push origin $(git branch --show-current) --force
 
-    echo "✅ Done! Your GitHub matches your local folder 100%."
+    echo "done"
 }
