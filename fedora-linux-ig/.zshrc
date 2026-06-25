@@ -26,3 +26,12 @@ gitup() {
 
     echo "done"
 }
+# an shortcut for coping and pasting config files to github
+ctogit() {
+    echo "starting"
+    rm -r /home/ig/dotfiles/fedora-linux-ig/myconfigs
+    mkdir /home/ig/dotfiles/fedora-linux-ig/myconfigs
+    cp -r ~/.config/{fuzzel,fastfetch,niri,waybar,starship.toml,kitty} /home/ig/dotfiles/fedora-linux-ig/myconfigs/
+    echo "done"
+
+}
