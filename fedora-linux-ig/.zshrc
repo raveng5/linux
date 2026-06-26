@@ -7,7 +7,11 @@ source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Initialize Starship Prompt
 eval "$(starship init zsh)"
+
+# start with fastfetch
 fastfetch
+
+# some aliases
 alias zed="/home/ig/.local/zed.app/bin/zed"
 alias rezsh="source ~/.zshrc"
 
@@ -27,6 +31,7 @@ gitup() {
 
     echo "done"
 }
+
 # an shortcut for coping and pasting config files to github
 gitcopy() {
     echo "starting"
