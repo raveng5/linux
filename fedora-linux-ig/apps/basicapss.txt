@@ -1,0 +1,37 @@
+from the internet
+zed- my ide/text editor
+
+from flatpak:
+zen- my browser
+discord- my chat client
+
+from dnf(main repo):
+gnome clocks
+nautilus- file manager
+gnome calendar
+gnome calculator
+loupe
+baobab
+gimp
+libreoffice
+papers
+evince libs
+decibels.noarch
+gnome boxes
+mediawriter
+
+niri- The scrollable-tiling Wayland compositor itself.
+
+fuzzel- A lightning-fast, keyboard-driven application launcher that integrates seamlessly with Wayland.
+
+mako- A lightweight notification daemon so system notifications pop up beautifully.
+
+swaybg- A minimal tool used to set your desktop wallpaper.
+
+brightnessctl- Allows your keyboard function keys to control laptop screen brightness.
+
+pipewire-utils / wireplumber-Management tools to ensure audio, microphones, and volume keys work flawlessly.
+
+xwayland-satellite- Runs X11 applications inside Niri seamlessly so legacy apps don't break.
+
+xdg-desktop-portal-gnome- Handles screen sharing, opening files, and dark/light preference handshakes.
