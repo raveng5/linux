@@ -1,3 +1,7 @@
+
+
+                        some apps that i am using
+--------------------------------------------------------------------------------------
 from the internet
 zed- my ide/text editor
 Starship – The minimalist cross-shell prompt you use to customize your terminal.
