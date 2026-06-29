@@ -38,9 +38,22 @@ gitcopy() {
     rm -r /home/ig/dotfiles/fedora-linux-ig/myconfigs
     mkdir /home/ig/dotfiles/fedora-linux-ig/myconfigs
     cp -r ~/.config/{fuzzel,fastfetch,niri,waybar,starship.toml,kitty} /home/ig/dotfiles/fedora-linux-ig/myconfigs/
-    echo "-----------------------"
+    echo "and..."
     rm /home/ig/dotfiles/fedora-linux-ig/.zshrc
     cp /home/ig/.zshrc /home/ig/dotfiles/fedora-linux-ig/.zshrc
     echo "done"
 
+}
+
+#change wallpaper
+wallpaper() {
+    if [ -z "$1" ]; then
+        echo "נא לבחור מספר טפט. דוגמה: wallpaper 1"
+        return 1
+    fi
+
+
+    sed -i "273s/wallpaper[0-9]\+\.jpg/wallpaper${1}.jpg/" ~/.config/niri/config.kdl
+
+    echo "changed wallpaper to wallpaper${1}"
 }
